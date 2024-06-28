@@ -1,0 +1,223 @@
+/* CSS Document */
+
+/* Table of Contents
+-----------------------------------------------------------------------------
+=> Desktop
+=> Tablet
+=> Medium devices
+=> Small devices
+=> iPhone X landscape
+*/
+
+/* ----- Desktop ≥1024px and ≤1190 ----- */
+@media (min-width: 1024px) and (max-width: 1199px) {}
+
+/* ----- Tablet ≥768px and ≤1023 ----- */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.footer-menu {
+		flex-direction: column;
+	}
+	.footer-menu .footer-link ul {
+		padding-left: 0px;
+	}
+	.footer-menu .footer-link {
+		margin-bottom: 50px;
+	}
+	.footer-social {
+		margin-left: 0px;
+	}
+	.fifty-fifty-section .ct-content {
+		max-width: 100%;
+	}
+	.fifty-fifty-section .ct-image {
+		margin: 0 auto;
+	}
+}
+
+/* ----- iPhone X landscape ≥375px and ≤812 ----- */
+@media (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.card {
+		min-height: 264px;
+	}
+}
+
+
+
+@media (max-width:991px){
+	.fifty-fifty-section .ct-content {
+		max-width: 100%;
+		order: 1;
+	}
+	.fifty-fifty-section .ct-image {
+		max-width: 100%;
+		margin-bottom: 24px;
+	}
+	.who-we-define {
+		margin-bottom: 72px;
+	}
+	.fifty-fifty-section .row{
+		flex-direction: column-reverse;
+		margin-bottom: 72px;
+	}
+	.fifty-fifty-section .ct-content h2{
+		font-size: 31px;
+		margin-bottom: 27px;
+	}
+	.fifty-fifty-section .ct-content ul {
+		margin-bottom: 27px;
+	}
+	
+}
+
+
+/* ----- Medium devices ≤767px ----- */
+@media (max-width: 767px) {
+	body {
+		background-color: black;
+	}
+	.container {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+	.navbar .cy-logo {
+		width: 156px;
+		height: auto;
+	}
+	.btn {
+		padding: 12px 16px;
+		width: 100%;
+		font-size: 14px;
+		line-height: 0.85;
+	}
+	.hero-section {
+		padding: 11px 0 40px;
+	}
+	h1 , .h1 {
+		font-size: 56px;
+		margin-bottom: 24px;
+	}
+	.hero-section .hero-define {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+	.hero-section .hero-define p {
+		font-size: 18px;
+	}
+	.hero-data img {
+		margin-bottom: 24px;
+	}
+	.hero-data {
+		max-width: 100%;
+		padding: 16px;
+		
+	}
+	.who-we-define .defend p{
+		display: none;
+	}
+	.who-we-define .defend h2 {
+		margin-bottom: 27px;
+	}
+	.related-content {
+		margin:70px 0
+	}
+	.related-content .related-main h2{
+		margin-bottom: 27px;
+	}
+	.related-content [class*="cell-"] {
+		margin-bottom: 32px;
+	}
+	.rc-content .rc-content-data .rc-content-data-desc h4{
+		font-size: 18px;
+	}
+	.rc-content .rc-content-data .rc-content-data-desc {
+		margin-bottom: 26px;
+	}
+	.we-defend{
+		padding-bottom:40px ;
+	}
+	.footer-menu {
+		flex-direction: column;
+	}
+	.footer-link ul {
+		flex-direction: column;
+	}
+	.footer-link ul li {
+		margin: 0 0 24px;
+	}
+	.footer-menu .footer-link {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.footer-social .footer-social-logo {
+		width: 43px;
+		height: 30px;
+	}
+	.footer-social {
+		margin-left: 0px;
+	}
+	.footer-link .footer-social {
+		margin-bottom: 32px;
+	}
+	.test-card .test-card-contain p {
+		font-size: 18px;
+	}
+	.test-card .test-card-contain {
+		max-width: 100%;
+		min-height: auto;
+		padding: 42px 24px;
+	}
+	.test-card .slick-list {
+		padding: 0;
+	}
+	.testimonials{
+		margin: 70px 0;
+	}
+	.fifty-fifty-section{
+		margin: 70px 0;
+	}
+}
+
+/* ----- Small devices ≤640px ----- */
+@media (max-width: 640px) {}
+
+
+@media (max-width: 527px) {
+	
+	.card:hover .content {
+		transform: rotate(0);
+	}
+	.front,
+	.back {
+		backface-visibility: visible;
+	}
+	.back {
+		transform: rotateY(0deg);
+		border: 5px solid;
+		border-image: linear-gradient(45deg, #00d99d , #00a7aa) 1;		
+	}
+	.front::after, .back::after{
+		background-image: none;
+	}
+	.flip-card .slick-list{
+		padding: 0 8px;
+		overflow: visible;
+	}
+	.department {
+		margin-bottom: 15px;
+	}
+	.back-image{
+		margin-bottom: 15px;
+	}
+	.back-title .back-image img{
+		display:block;
+		margin-right: 10px;
+	}
+}
